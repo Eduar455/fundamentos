@@ -1,0 +1,104 @@
+<DOCTYPEhtml >
+<html  lang =" es " >
+<cabeza >
+    <juego de caracteres meta  =" UTF-8 " >
+    <meta  http-equiv =" X-UA-Compatible " content =" IE=edge " >
+    <meta  name =" viewport " content =" ancho=ancho-del-dispositivo, escala-inicial=1.0 " >
+    <título > Calculadora2.0 </ título >
+</cabeza >
+<cuerpo >
+    <guión >
+        <hacer {
+      let  num1 = parseFloat ( prompt ( "numero 1" ) ) 
+      let  decicion = prompt ( " coloca un operador (+),(-),(x),(/),(√ = r)" )
+      let  num2 = parseFloat ( prompt ( "numero2" ) ) 
+      var  suma = 0 ;
+      var  resto = 0 ;
+      var  multi = 0 ;
+    if ( decisión === "+" ) {
+        suma = num1 + num2
+        consola _ registro ( "Suma:" )
+        consola _ registro ( suma )
+        let  resultadofinal = prompt ( `El resultado de la suma es: ${ suma }   (enter para continuar)` )         
+      } más {
+        if ( decisión === "-" ) {
+          resta = num1 - num2
+          consola _ registro ( "resta:" )
+          consola _ registro ( resta )
+          var  resultadofinal2 = prompt ( `El resultado de la resta es: ${ resta } (enter para continuar)` )           
+        } más {
+          if ( decisión === "x" ) {
+            multi = num1 * num2
+            var  resultadofinal3 = prompt ( `El resultado de la multiplicacion es: ${ mult } (enter para continuar)` )                     
+           } más {
+            if ( decisión === "/" ) {
+          sea  ​​div = num1 / num2
+          var  resultadofinal4 = prompt ( `El resultado de la división es: ${ div } (enter para continuar)` )                    
+            } más {
+            if ( decisión === "r" ) {
+          sea  ​​raiz = Math . sqrt ( num1 + num2 )
+          var  resultadofinal5 = prompt ( `El resultado de la raiz cuadrada de la suma del numero 1 y 2 es igual a: ${ raiz }       (enter para continuar)` )
+
+             }
+            }
+          }
+        }
+      }
+      var  salir = ( prompt ( "colaca s si quieres continuar haciendo operaciones n si no s/n" ) )
+    } mientras ( salir === "s" )
+    </ guión >
+</cuerpo >
+</html >
+   
+    </guión >
+     <guión >
+       //Ejercicio 1.- Programa una función que cuente el número de caracteres de una cadena de texto, pe. miFunción "Hola Mundo" devolverá 10.
+        función  contarCaracteres ( cadena = "" )
+        {
+            <si ( cadena )
+            {
+                
+                consola _ info ( `La cadena " ${ cadena } " tiene ${ cadena . length } caracteres` )
+            }
+        }
+        contar Caracteres ( ) ;
+        contarCaracteres ( "Hola Mundo" ) ;></si>
+        
+    
+    
+        /*Ejercicio2.- Programa una función que te devuelva el texto recortado según el número de caracteres indicados,
+         Educación física. miFuncion "Hola Mundo", 4 devolverá "Hola"*/
+       <const  recortarTex  =  ( cadena = "" ,  longitud  =  indefinido )  =>
+        ( ! cadena )
+        ? <consola _ advertir ( "No existe la cadena" )
+        : consola . info ( cadena . corte ( 0 , longitud ) ) ;
+       recortarTex ( "Hola a todos" , 4 ) ;
+       recortarTex ( ) ;>
+    
+    
+    
+       /*Ejercicio 3.- Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter,
+        Educación física. miFuncion 'hola que tal', ' ' devolverá ['hola', 'que', 'tal']*/
+        <const  cadenaDeArreglo  =  ( cadena  =  "" , separador  =  indefinido )  =>
+       ( ! <cadena )
+        ? <consola _ advertir ( "No existe la cadena" )
+        : consola . info ( cadena . split ( separador ) ) ;
+        cadenaDeArreglo ( "Hola que tal" ,  " " ) ;>
+
+    
+        /*Ejercicio 4.- Programa una función que repite un texto X veces,
+         Educación física. miFuncion 'Hola Mundo', 3 devolverá Hola Mundo Hola Mundo Hola Mundo*/
+         <const  repiteTexto  =  ( texto  =  "" ,  repeticiones  =  indefinido )  => {
+             <si ( ! texto ) devuelve  consola . advertir ( "No ingresaste un texto" ) ;
+            ;
+            if ( repeticiones  ===  0 ) devuelve  consola . error  ( "Las repeticiones en 0 no es valido" ) ;
+    
+            for ( sea  i =  1 ;  i  <=  repeticiones ; i ++ )
+            {
+              consola _ info ( ` ${ texto } , ${ i } ` ) ;
+            }
+         }
+         repiteTexto ( "Hola Mundo" , 3 ) ;
+    </ guión >
+    </cuerpo >
+    </html >
